@@ -1,0 +1,20 @@
+uuid: e980644c-d28a-4506-b426-088a6798d803
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_basic
+field_name: field_basic
+entity_type: user
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: b524876d-5473-4a0a-8c11-57bc05a8de1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_special_allowances
+field_name: field_special_allowances
+entity_type: user
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

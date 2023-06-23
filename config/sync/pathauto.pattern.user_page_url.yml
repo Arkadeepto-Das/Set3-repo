@@ -1,0 +1,14 @@
+uuid: 3ea3cdc3-293e-4026-ae50-265554ea1119
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_page_url
+label: 'User page URL'
+type: 'canonical_entities:user'
+pattern: '/employees/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

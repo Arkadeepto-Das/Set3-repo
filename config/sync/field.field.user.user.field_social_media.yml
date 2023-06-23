@@ -1,0 +1,31 @@
+uuid: 58b6e956-ef33-4cf5-b74b-a67f8ed82941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_social_media
+    - paragraphs.paragraphs_type.social_media
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_social_media
+field_name: field_social_media
+entity_type: user
+bundle: user
+label: 'Social Media'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_media: social_media
+    negate: 0
+    target_bundles_drag_drop:
+      social_media:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

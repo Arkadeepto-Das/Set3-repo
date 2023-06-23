@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM
+role_to_select:
+  employee: employee
+  content_editor: '0'
+  administrator: '0'
+  hr: '0'
+registration_mode: user

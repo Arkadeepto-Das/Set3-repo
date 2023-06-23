@@ -1,0 +1,37 @@
+uuid: e2794bc7-6e86-41cd-ace2-090fb980dbeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_status.field_employee
+    - field.field.node.salary_status.field_status
+    - node.type.salary_status
+  module:
+    - options
+    - user
+id: node.salary_status.default
+targetEntityType: node
+bundle: salary_status
+mode: default
+content:
+  field_employee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
