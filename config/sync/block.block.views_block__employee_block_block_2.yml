@@ -1,0 +1,40 @@
+uuid: aa6deb4f-e345-4e4b-a23a-b6002d447930
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.employee_block
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap5
+id: views_block__employee_block_block_2
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:employee_block-block_2'
+settings:
+  id: 'views_block:employee_block-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      hr: hr
+      employee: employee

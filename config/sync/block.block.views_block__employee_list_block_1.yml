@@ -1,0 +1,40 @@
+uuid: 32e76c30-6422-438f-a81d-5228a5a48744
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.employee_list
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap5
+id: views_block__employee_list_block_1
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:employee_list-block_1'
+settings:
+  id: 'views_block:employee_list-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employees/*/salary-details'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      hr: hr
+      employee: employee

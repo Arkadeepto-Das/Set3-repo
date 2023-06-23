@@ -1,0 +1,20 @@
+uuid: b92983d7-c159-4780-9b50-a1c79e254c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary_status
+  module:
+    - node
+    - toolbar
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer users'
+  - 'create salary_status content'
+  - 'view user email addresses'

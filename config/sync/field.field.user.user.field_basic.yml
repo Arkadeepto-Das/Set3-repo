@@ -1,0 +1,24 @@
+uuid: f013091b-0772-45d5-b260-0d799bca94eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_basic
+  module:
+    - user
+id: user.user.field_basic
+field_name: field_basic
+entity_type: user
+bundle: user
+label: Basic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
